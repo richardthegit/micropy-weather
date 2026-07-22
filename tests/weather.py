@@ -9,7 +9,6 @@ def parse_iso8601(iso_str):
     """
     dt = datetime.fromisoformat(iso_str)
     dt_utc = dt.replace(tzinfo = timezone.utc)
-    print(dt_utc)
     return int(dt_utc.timestamp())
 
 
@@ -25,7 +24,7 @@ params = {
     'timezone': 'UTC',
 }
 
-url = 'https://api.open-meteo.com/v1/forecast'
+url = 'http://api.open-meteo.com/v1/forecast'
 response = requests.get(url, params = params)
 
 if response.status_code == 200:
@@ -33,7 +32,6 @@ if response.status_code == 200:
     print(dumps(data, indent = 2))
 
     now = time.time()
-    print(f'Now: {time.localtime(now)}')
     hourly = data['hourly']
 
     for i in range(len(hourly['time'])):

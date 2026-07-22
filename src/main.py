@@ -6,10 +6,7 @@ from rb.core.tz import parse_iso8601
 from rb.core.wifi import Wifi
 from rb.dev.st7789 import color565, new_superwide
 
-
-wifi = Wifi()
-wifi.on()
-wifi.ntp()
+from fonts import noto20
 
 display, bl_pwm = new_superwide()
 colors = ((255, 0, 0), (0, 255, 0), (0, 0, 255), (255, 255, 0))
@@ -21,7 +18,13 @@ for c in colors:
     display.fill_rect(0, y,  w, h, color565(*c))
     y += h
 
-url = 'https://api.open-meteo.com/v1/forecast'
+display.write(noto20, '1234', 0, 20, color565(0, 0, 0), color565(255, 255, 255))
+
+wifi = Wifi()
+wifi.on()
+wifi.ntp()
+
+url = 'http://api.open-meteo.com/v1/forecast'
 lat = 53.2965683411
 lon = -2.091498096493
 
@@ -29,8 +32,8 @@ def latest():
     return get_json(url, {
         'latitude': lat,
         'longitude': lon,
-        'hourly': 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,precipitation',
-        'forecast_days': 2,
+        'hourly': 'precipitation',
+        'forecast_days': 1,
         'timezone': 'UTC',
     })
 
@@ -44,11 +47,7 @@ def debug_forecast(data):
         hours = (forecast_time - now) // 3600
         if hours >= 0 and hours < 5:
             print(f'{hours} ({hourly['time'][i]})')
-            print(f'  Cloud H {hourly['cloud_cover_high'][i]}%')
-            print(f'  Cloud M {hourly['cloud_cover_mid'][i]}%')
-            print(f'  Cloud L {hourly['cloud_cover_low'][i]}%')
             print(f'  Rain {hourly['precipitation'][i]}mm')
 
 
 debug_forecast(latest())
-
