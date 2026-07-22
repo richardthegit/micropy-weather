@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 from json import dumps
 import requests, time
 
@@ -6,17 +7,10 @@ def parse_iso8601(iso_str):
     """
     Return an integer epoch time for the specified ISO8601 UTC date.
     """
-    return time.mktime((
-        int(iso_str[0:4]),    # year
-        int(iso_str[5:7]),    # month
-        int(iso_str[8:10]),   # mday
-        int(iso_str[11:13]),  # hour
-        int(iso_str[14:16]),  # minute
-        0,                    # second
-        0,                    # weekday (0-6, padded)
-        0,                    # yearday (1-366, padded)
-        0,                    # DST
-    ))
+    dt = datetime.fromisoformat(iso_str)
+    dt_utc = dt.replace(tzinfo = timezone.utc)
+    print(dt_utc)
+    return int(dt_utc.timestamp())
 
 
 # Example coordinates (Manchester, UK)
@@ -26,9 +20,9 @@ lon = -2.091498096493
 params = {
     'latitude': lat,
     'longitude': lon,
-    'hourly': 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,precipitation',
+    'hourly': 'precipitation',
     'forecast_days': 2,
-    'timezone': 'Europe/London',
+    'timezone': 'UTC',
 }
 
 url = 'https://api.open-meteo.com/v1/forecast'
@@ -39,16 +33,15 @@ if response.status_code == 200:
     print(dumps(data, indent = 2))
 
     now = time.time()
+    print(f'Now: {time.localtime(now)}')
     hourly = data['hourly']
 
     for i in range(len(hourly['time'])):
         forecast_time = parse_iso8601(hourly['time'][i])
-        hours = (forecast_time - now) // 3600
-        if hours >= 0 and hours < 5:
-            print(f'{hours} ({hourly['time'][i]})')
-            print(f'  Cloud H {hourly['cloud_cover_high'][i]}%')
-            print(f'  Cloud M {hourly['cloud_cover_mid'][i]}%')
-            print(f'  Cloud L {hourly['cloud_cover_low'][i]}%')
+        mins = (forecast_time - now) // 60
+        hours = mins // 60
+        if mins >= 0 and hours < 5:
+            print(f'{hours}:{mins} ({hourly['time'][i]})')
             print(f'  Rain {hourly['precipitation'][i]}mm')
 
 else:
