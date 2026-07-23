@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="284mm"
+   height="76mm"
+   viewBox="0 0 284 76"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="design.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.5922929"
+     inkscape:cx="452.47883"
+     inkscape:cy="131.6916"
+     inkscape:window-width="1536"
+     inkscape:window-height="795"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BG">
+    <rect
+       style="fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+       id="rect1"
+       width="284"
+       height="76"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:label="cell 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#a7d4e4;fill-opacity:1;stroke-width:0.396815"
+       id="rect2"
+       width="67"
+       height="48"
+       x="2"
+       y="2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="3.2865887"
+       y="18.901825"
+       id="text2-2"><tspan
+         sodipodi:role="line"
+         id="tspan2-93"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="3.2865887"
+         y="18.901825">25°</tspan></text>
+    <rect
+       style="fill:#f37f94;fill-opacity:1;stroke-width:0.268645"
+       id="rect2-7"
+       width="67"
+       height="22"
+       x="2"
+       y="52" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="11.486328"
+       y="70.275391"
+       id="text2-8"><tspan
+         sodipodi:role="line"
+         id="tspan2-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="11.486328"
+         y="70.275391">10:00</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="34.97319"
+       y="48.178123"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="34.97319"
+         y="48.178123">1.0</tspan></text>
+    <circle
+       style="fill:#fcb315;fill-opacity:1;stroke-width:0.4"
+       id="path2"
+       cx="59.691185"
+       cy="10.779647"
+       r="7.1921477" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2901px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.225802"
+       x="58.551067"
+       y="34.451302"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="fill:#7c4226;fill-opacity:1;stroke-width:0.225802"
+         x="58.551067"
+         y="34.451302"
+         dy="5.6450624">m</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#7c4226;fill-opacity:1;stroke-width:0.225802"
+         x="58.551067"
+         y="48.563946"
+         id="tspan7">m</tspan></text>
+  </g>
+  <g
+     inkscape:label="cell 2"
+     inkscape:groupmode="layer"
+     id="g5"
+     transform="translate(71)">
+    <rect
+       style="fill:#a7d4e4;fill-opacity:1;stroke-width:0.396815"
+       id="rect3"
+       width="67"
+       height="48"
+       x="2"
+       y="2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="3.2865887"
+       y="18.901825"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="3.2865887"
+         y="18.901825">25°</tspan></text>
+    <rect
+       style="fill:#f37f94;fill-opacity:1;stroke-width:0.268645"
+       id="rect4"
+       width="67"
+       height="22"
+       x="2"
+       y="52" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="11.486328"
+       y="70.275391"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="11.486328"
+         y="70.275391">11:00</tspan></text>
+    <circle
+       style="fill:#fcb315;fill-opacity:1;stroke-width:0.4"
+       id="circle5"
+       cx="59.691185"
+       cy="10.779647"
+       r="7.1921477" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+       x="34.441666"
+       y="47.883331"
+       id="text2-84"><tspan
+         sodipodi:role="line"
+         id="tspan2-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+         x="34.441666"
+         y="47.883331">1.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2901px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+       x="58.019547"
+       y="34.156509"
+       id="text6-0"><tspan
+         sodipodi:role="line"
+         id="tspan6-3"
+         style="fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+         x="58.019547"
+         y="34.156509"
+         dy="5.6450624">m</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+         x="58.019547"
+         y="48.269135"
+         id="tspan7-6">m</tspan></text>
+  </g>
+  <g
+     inkscape:label="cell 3"
+     inkscape:groupmode="layer"
+     id="g12"
+     transform="translate(142)">
+    <rect
+       style="fill:#a7d4e4;fill-opacity:1;stroke-width:0.396815"
+       id="rect7"
+       width="67"
+       height="48"
+       x="2"
+       y="2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+       x="3.2865887"
+       y="18.901825"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+         x="3.2865887"
+         y="18.901825">25°</tspan></text>
+    <rect
+       style="fill:#f37f94;fill-opacity:1;stroke-width:0.268645"
+       id="rect8"
+       width="67"
+       height="22"
+       x="2"
+       y="52" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="11.486328"
+       y="70.275391"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="11.486328"
+         y="70.275391">11:00</tspan></text>
+    <circle
+       style="fill:#fcb315;fill-opacity:1;stroke-width:0.4"
+       id="circle9"
+       cx="59.691185"
+       cy="10.779647"
+       r="7.1921477" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+       x="34.441666"
+       y="47.883331"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+         x="34.441666"
+         y="47.883331">1.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2901px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+       x="58.019547"
+       y="34.156509"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+         x="58.019547"
+         y="34.156509"
+         dy="5.6450624">m</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+         x="58.019547"
+         y="48.269135"
+         id="tspan12">m</tspan></text>
+  </g>
+  <g
+     inkscape:label="cell 4"
+     inkscape:groupmode="layer"
+     id="g17"
+     transform="translate(213)">
+    <rect
+       style="fill:#a7d4e4;fill-opacity:1;stroke-width:0.396815"
+       id="rect12"
+       width="67"
+       height="48"
+       x="2"
+       y="2" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+       x="3.2865887"
+       y="18.901825"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+         x="3.2865887"
+         y="18.901825">25°</tspan></text>
+    <rect
+       style="fill:#f37f94;fill-opacity:1;stroke-width:0.268645"
+       id="rect13"
+       width="67"
+       height="22"
+       x="2"
+       y="52" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+       x="11.486328"
+       y="70.275391"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#7c4226;fill-opacity:1;stroke-width:0.4"
+         x="11.486328"
+         y="70.275391">11:00</tspan></text>
+    <circle
+       style="fill:#fcb315;fill-opacity:1;stroke-width:0.4"
+       id="circle14"
+       cx="59.691185"
+       cy="10.779647"
+       r="7.1921477" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+       x="34.441666"
+       y="47.883331"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';fill:#064f6e;fill-opacity:1;stroke-width:0.4"
+         x="34.441666"
+         y="47.883331">1.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2901px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+       x="58.019547"
+       y="34.156509"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+         x="58.019547"
+         y="34.156509"
+         dy="5.6450624">m</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#064f6e;fill-opacity:1;stroke-width:0.225802"
+         x="58.019547"
+         y="48.269135"
+         id="tspan17">m</tspan></text>
+  </g>
+</svg>

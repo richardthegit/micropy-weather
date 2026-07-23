@@ -2,23 +2,30 @@ import time
 
 from rb.core.net import get_json
 from rb.core.richtext import rt
-from rb.core.tz import parse_iso8601
+from rb.core.tz import local_secs, parse_iso8601
 from rb.core.wifi import Wifi
 from rb.dev.st7789 import color565, new_superwide
 
-from fonts import noto20
+from fonts import condensed26
 
 display, bl_pwm = new_superwide()
-colors = ((255, 0, 0), (0, 255, 0), (0, 0, 255), (255, 255, 0))
-w = 284
-h = 76 // 4
-y = 0
 
-for c in colors:
-    display.fill_rect(0, y,  w, h, color565(*c))
-    y += h
+dark_blue = color565(6,79,110)
+light_blue = color565(167,212,228)
+brown = color565(124,66,38)
+pink = color565(243,127,148)
 
-display.write(noto20, '1234', 0, 20, color565(0, 0, 0), color565(255, 255, 255))
+
+def cell(x, epoch_time, precipitation, temp):
+    y, m, d, h, m, s, wd, yd = time.localtime(local_secs(epoch_time))
+
+    display.fill_rect(x + 2, 4,  66, 44, light_blue)
+    display.fill_rect(x + 2, 52,  66, 20, pink)
+    display.aligned(condensed26, f'{temp}°', x + 4, 6, brown, light_blue)
+    display.aligned(condensed26, f'{precipitation:.1f}', x + 65, 46, 
+                    brown, light_blue, halign = 'right', valign = 'bottom')
+    display.aligned(condensed26, f'{h}:{m:02d}', x + 2 + 33, 61, brown, pink,
+                    halign = 'center', valign = 'middle')
 
 wifi = Wifi()
 wifi.on()
@@ -32,7 +39,7 @@ def latest():
     return get_json(url, {
         'latitude': lat,
         'longitude': lon,
-        'hourly': 'precipitation',
+        'hourly': 'precipitation,temperature_2m',
         'forecast_days': 1,
         'timezone': 'UTC',
     })
@@ -41,13 +48,20 @@ def latest():
 def debug_forecast(data):
     now = time.time()
     hourly = data['hourly']
+    display.fill(dark_blue)
 
+    cell_index = 0
     for i in range(len(hourly['time'])):
         forecast_time = parse_iso8601(hourly['time'][i])
-        hours = (forecast_time - now) // 3600
-        if hours >= 0 and hours < 5:
-            print(f'{hours} ({hourly['time'][i]})')
-            print(f'  Rain {hourly['precipitation'][i]}mm')
+        mins = (forecast_time - now) // 60
+        hours = mins // 60
+        if mins > -60:
+            cell(cell_index * 71, forecast_time,
+                 hourly['precipitation'][i], 
+                 hourly['temperature_2m'][i])
 
+            cell_index += 1
+            if cell_index >= 4:
+                return
 
 debug_forecast(latest())
