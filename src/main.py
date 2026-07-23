@@ -1,5 +1,6 @@
 import time
 
+from rb.core import busy_sleep
 from rb.core.net import get_json
 from rb.core.richtext import rt
 from rb.core.tz import local_secs, parse_iso8601
@@ -45,10 +46,12 @@ def latest():
     })
 
 
-def debug_forecast(data):
+def render_forecast(data, clear = True):
     now = time.time()
     hourly = data['hourly']
-    display.fill(dark_blue)
+
+    if clear:
+        display.fill(dark_blue)
 
     cell_index = 0
     for i in range(len(hourly['time'])):
@@ -64,4 +67,8 @@ def debug_forecast(data):
             if cell_index >= 4:
                 return
 
-debug_forecast(latest())
+render_forecast(latest())
+
+while True:
+    render_forecast(latest(), False)
+    busy_sleep(10 * 60)
